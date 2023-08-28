@@ -1,4 +1,14 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.hover-btn:hover {
+  background-color: $primary-300;
+  color: $light;
+
+  img {
+    content: url("../assets/images/icons/point_scan-light.svg");
+  }
+}
+
+.navbar-toggler {
+  &:hover {
+    border: 1px solid $secondary;
+  }
 }
