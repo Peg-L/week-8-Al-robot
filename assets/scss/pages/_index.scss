@@ -1,3 +1,101 @@
-.index-title {
-  font-size: 100px;
+.bg-h-banner {
+  height: 980px;
+}
+
+.banner-img {
+  height: 580px;
+}
+
+.text-justify {
+  text-align-last: justify;
+}
+
+.letter-spacing-16 {
+  letter-spacing: 16px;
+}
+
+.letter-spacing-20 {
+  letter-spacing: 20px;
+}
+
+.letter-spacing-32 {
+  letter-spacing: 32px;
+}
+
+.letter-spacing-48 {
+  letter-spacing: 48px;
+}
+
+.mt-n-26 {
+  margin-top: -104px;
+}
+
+.me-n-8 {
+  margin-right: -32px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  &::after {
+    content: url("../images/icons/line_arrow_notch-gray.png");
+    position: absolute;
+  }
+
+  &:hover {
+    &::after {
+      content: url("../images/icons/line_arrow_notch-white.png");
+    }
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    left: 0;
+  }
+}
+
+.swiper-button-next {
+  &::after {
+    right: 0;
+    transform: rotate(180deg);
+  }
+}
+
+.arrow_end-long {
+  &:hover {
+    content: url("../images/icons/line_arrow_notch_end-long-hover.png");
+  }
+}
+
+.arrow_end-short {
+  &:hover {
+    content: url("../images/icons/line_arrow_notch_end-short-hover.png");
+  }
+}
+
+.rotate {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.reviewSwiper {
+  .swiper-slide {
+    aspect-ratio: 1;
+  }
+}
+
+.review-swiper-pagination {
+  background: rgba($light, 0.2);
+}
+
+.swiper-pagination-progressbar-fill {
+  background-color: $light !important;
 }

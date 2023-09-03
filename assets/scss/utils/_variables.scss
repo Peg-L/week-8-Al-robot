@@ -303,12 +303,15 @@ $primary-200: #6e01f8 !default;
 $primary-300: #380c7e !default;
 $primary-400: #1f0f39 !default;
 $primary-500: #11002d !default;
-// $linear: linear-gradient(180deg, #7000ff 0%, rgba(17, 0, 45, 0) 100%);
 $secondary: #e9e2f3 !default;
 $secondary-200: #6d01f7 !default;
-// $radial: radial-gradient(50% 50% at 50% 50%, #28085c 0%, rgba(0, 0, 0, 0) 100%);
+$secondary-300: #ad93cf;
 $light: $white !default;
 $dark: $black !default;
+$gradient-linear-90: linear-gradient(90deg, #7000ff 0%, #11002d 100%);
+$gradient-linear-180: linear-gradient(180deg, #7000ff 0%, #000 100%);
+$gradient-radial-1: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%);
+$gradient-radial-2: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085c 100%);
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -325,8 +328,7 @@ $theme-colors: (
   "primary-500": $primary-500,
   "secondary": $secondary,
   "secondary-200": $secondary-200,
-  // "linear": $linear,
-  // "radial": $radial,
+  "secondary-300": $secondary-300,
   "light": $light,
   "dark": $dark,
   "success": $success,
@@ -385,7 +387,7 @@ $escaped-characters: (
 $enable-caret: true !default;
 $enable-rounded: true !default;
 $enable-shadows: false !default;
-$enable-gradients: false !default;
+$enable-gradients: true !default;
 $enable-transitions: true !default;
 $enable-reduced-motion: true !default;
 $enable-smooth-scroll: true !default;
@@ -439,7 +441,7 @@ $spacers: (
   // 16
   4: calc($spacer / 4 * 4),
   // 18
-  4--5: calc($spacer / 4 * 4.5),
+  4-5: calc($spacer / 4 * 4.5),
   // 20
   5: calc($spacer / 4 * 5),
   // 24
@@ -466,6 +468,12 @@ $spacers: (
   19: calc($spacer / 4 * 19),
   // 80
   20: calc($spacer / 4 * 20),
+  // 96
+  24: calc($spacer / 4 * 24),
+  // 104
+  26: calc($spacer / 4 * 26),
+  // 124
+  31: calc($spacer / 4 * 31),
   // 144
   36: calc($spacer / 4 * 36),
   // 160
@@ -727,7 +735,7 @@ $headings-margin-bottom: $spacer * 0.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
+$headings-line-height: 1.5 !default;
 $headings-color: inherit !default;
 // scss-docs-end headings-variables
 

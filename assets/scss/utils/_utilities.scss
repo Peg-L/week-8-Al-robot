@@ -802,7 +802,11 @@ $utilities: map-merge(
         property: background-image,
         class: bg,
         values: (
-          gradient: var(--#{$prefix}gradient),
+          // gradient: var(--#{$prefix}gradient),
+          gradient-linear-90: $gradient-linear-90,
+          gradient-linear-180: $gradient-linear-180,
+          gradient-radial-1: $gradient-radial-1,
+          gradient-radial-2: $gradient-radial-2,
         ),
       ),
     // scss-docs-start utils-interaction
