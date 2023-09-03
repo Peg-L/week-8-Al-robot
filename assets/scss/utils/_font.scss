@@ -10,22 +10,18 @@
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
-.letter-spacing-16 {
-  letter-spacing: 16px;
+$max: 48;
+
+@for $i from 0 through $max {
+  .letter-spacing-#{$i} {
+    letter-spacing: $i * 1px !important;
+  }
 }
 
-.letter-spacing-20 {
-  letter-spacing: 20px;
-}
-
-.letter-spacing-32 {
-  letter-spacing: 32px;
-}
-
-.letter-spacing-40 {
-  letter-spacing: 40px;
-}
-
-.letter-spacing-48 {
-  letter-spacing: 48px;
+@include media-breakpoint-up(md) {
+  @for $i from 0 through $max {
+    .letter-spacing-md-#{$i} {
+      letter-spacing: $i * 1px !important;
+    }
+  }
 }

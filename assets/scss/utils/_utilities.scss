@@ -109,24 +109,29 @@ $utilities: map-merge(
       ),
     "top": (
       property: top,
+      responsive: true,
       values: $position-values,
     ),
     "bottom": (
       property: bottom,
+      responsive: true,
       values: $position-values,
     ),
     "start": (
       property: left,
+      responsive: true,
       class: start,
       values: $position-values,
     ),
     "end": (
       property: right,
+      responsive: true,
       class: end,
       values: $position-values,
     ),
     "translate-middle": (
       property: transform,
+      responsive: true,
       class: translate-middle,
       values: (
         null: translate(-50%, -50%),
@@ -139,15 +144,16 @@ $utilities: map-merge(
     "border":
       (
         property: border,
+        responsive: true,
         values: (
           null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
             var(--#{$prefix}border-color),
           0: 0,
         ),
-        responsive: true,
       ),
     "border-top": (
       property: border-top,
+      responsive: true,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
           var(--#{$prefix}border-color),
@@ -156,6 +162,7 @@ $utilities: map-merge(
     ),
     "border-end": (
       property: border-right,
+      responsive: true,
       class: border-end,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
@@ -165,6 +172,7 @@ $utilities: map-merge(
     ),
     "border-bottom": (
       property: border-bottom,
+      responsive: true,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
           var(--#{$prefix}border-color),
@@ -173,6 +181,7 @@ $utilities: map-merge(
     ),
     "border-start": (
       property: border-left,
+      responsive: true,
       class: border-start,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
@@ -247,6 +256,7 @@ $utilities: map-merge(
     ),
     "height": (
       property: height,
+      responsive: true,
       class: h,
       values: (
         25: 25%,

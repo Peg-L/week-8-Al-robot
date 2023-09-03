@@ -3,45 +3,50 @@
 }
 
 .banner-img {
-  height: 580px;
+  aspect-ratio: 1;
+
+  @include media-breakpoint-up(md) {
+    height: 580px;
+    aspect-ratio: 0;
+  }
 }
 
 .text-justify {
   text-align-last: justify;
 }
 
-.mt-n-26 {
-  margin-top: -104px;
-}
-
-.me-n-8 {
-  margin-right: -32px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  &::after {
-    content: url("../images/icons/line_arrow_notch-gray.png");
-    position: absolute;
+@include media-breakpoint-up(md) {
+  .my-n-md-20 {
+    margin: 0 -80px;
   }
+}
 
-  &:hover {
+@include media-breakpoint-up(md) {
+  .swiper-button-next,
+  .swiper-button-prev {
     &::after {
-      content: url("../images/icons/line_arrow_notch-white.png");
+      content: url("../images/icons/line_arrow_notch-gray.png");
+      position: absolute;
+    }
+
+    &:hover {
+      &::after {
+        content: url("../images/icons/line_arrow_notch-white.png");
+      }
     }
   }
-}
 
-.swiper-button-prev {
-  &::after {
-    left: 0;
+  .swiper-button-prev {
+    &::after {
+      left: 0;
+    }
   }
-}
 
-.swiper-button-next {
-  &::after {
-    right: 0;
-    transform: rotate(180deg);
+  .swiper-button-next {
+    &::after {
+      right: 0;
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -82,6 +87,26 @@
   }
 }
 
+@include media-breakpoint-up(md) {
+  .h-560 {
+    height: 560px;
+  }
+}
+
+.aspect-ratio {
+  aspect-ratio: 1;
+
+  @include media-breakpoint-up(md) {
+    aspect-ratio: auto;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .aspect-ratio-md {
+    aspect-ratio: 1;
+  }
+}
+
 .review-swiper-pagination {
   background: rgba($light, 0.2);
 }
@@ -118,27 +143,8 @@
   }
 }
 
-.footer-logo {
-  a {
-    color: $dark;
-  }
-
-  &:hover {
-    a {
-      color: $primary;
-    }
-  }
-}
-
-.footer-menu li {
-  a {
-    color: $dark;
-    transition: color 0.2s ease-in-out;
-  }
-
-  &:hover {
-    a {
-      color: $primary;
-    }
+.banner-img:first-of-type {
+  @include media-breakpoint-up(md) {
+    background: url("../assets/images/diane.png") no-repeat top / cover;
   }
 }

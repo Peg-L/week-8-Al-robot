@@ -12,3 +12,13 @@
     border: 1px solid $secondary;
   }
 }
+
+.navbar {
+  .bg-gradient-linear-180 {
+    margin: 0 -12px 0 -12px;
+
+    @include media-breakpoint-up(lg) {
+      background: transparent !important;
+    }
+  }
+}

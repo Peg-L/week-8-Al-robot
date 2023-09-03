@@ -1,3 +1,9 @@
 // .border-dashed {
 // border-style: dashed;
 // }
+
+@include media-breakpoint-up(md) {
+  .border-md-end {
+    border-right: 1px solid $light;
+  }
+}

@@ -397,7 +397,7 @@ $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
 $enable-rfs: true !default;
 $enable-validation-icons: true !default;
-$enable-negative-margins: false !default;
+$enable-negative-margins: true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities: true !default;
 
@@ -478,6 +478,8 @@ $spacers: (
   30: calc($spacer / 4 * 30),
   // 124
   31: calc($spacer / 4 * 31),
+  // 136
+  34: calc($spacer / 4 * 34),
   // 144
   36: calc($spacer / 4 * 36),
   // 160

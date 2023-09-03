@@ -1,0 +1,24 @@
+.footer-logo {
+  a {
+    color: $dark;
+  }
+
+  &:hover {
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.footer-menu li {
+  a {
+    color: $dark;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:hover {
+    a {
+      color: $primary;
+    }
+  }
+}
