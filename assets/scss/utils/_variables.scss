@@ -441,7 +441,7 @@ $spacers: (
   // 16
   4: calc($spacer / 4 * 4),
   // 18
-  4-5: calc($spacer / 4 * 4.5),
+  4p5: calc($spacer / 4 * 4.5),
   // 20
   5: calc($spacer / 4 * 5),
   // 24
@@ -459,11 +459,13 @@ $spacers: (
   // 52
   13: calc($spacer / 4 * 13),
   // 54
-  13--5: calc($spacer / 4 * 13.5),
+  13p5: calc($spacer / 4 * 13.5),
   // 56
   14: calc($spacer / 4 * 14),
   // 60
   15: calc($spacer / 4 * 15),
+  // 64
+  16: calc($spacer / 4 * 16),
   // 76
   19: calc($spacer / 4 * 19),
   // 80
@@ -472,6 +474,8 @@ $spacers: (
   24: calc($spacer / 4 * 24),
   // 104
   26: calc($spacer / 4 * 26),
+  // 120
+  30: calc($spacer / 4 * 30),
   // 124
   31: calc($spacer / 4 * 31),
   // 144
@@ -516,7 +520,7 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 $link-color: $primary !default;
-$link-decoration: underline !default;
+$link-decoration: none; //underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
@@ -741,12 +745,13 @@ $headings-color: inherit !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: (
-  1: 5rem,
+  // 400px
+  1: 25rem,
   2: 4.5rem,
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem,
+  6: 2.5rem
 ) !default;
 
 $display-font-family: null !default;
@@ -1171,8 +1176,8 @@ $form-file-button-hover-bg: var(--#{$prefix}secondary-bg) !default;
 // scss-docs-start form-floating-variables
 $form-floating-height: add(3.5rem, $input-height-border) !default;
 $form-floating-line-height: 1.25 !default;
-$form-floating-padding-x: $input-padding-x !default;
-$form-floating-padding-y: 1rem !default;
+$form-floating-padding-x: 1rem; //$input-padding-x !default;
+$form-floating-padding-y: 0.5rem !default;
 $form-floating-input-padding-t: 1.625rem !default;
 $form-floating-input-padding-b: 0.625rem !default;
 $form-floating-label-height: 1.5em !default;
@@ -1485,13 +1490,13 @@ $card-group-margin: $grid-gutter-width * 0.5 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y: 1rem !default;
-$accordion-padding-x: 1.25rem !default;
+$accordion-padding-y: 0; //1rem !default;
+$accordion-padding-x: 0; //1.25rem !default;
 $accordion-color: var(--#{$prefix}body-color) !default;
-$accordion-bg: var(--#{$prefix}body-bg) !default;
+$accordion-bg: none; //var(--#{$prefix}body-bg) !default;
 $accordion-border-width: var(--#{$prefix}border-width) !default;
 $accordion-border-color: var(--#{$prefix}border-color) !default;
-$accordion-border-radius: var(--#{$prefix}border-radius) !default;
+$accordion-border-radius: none; //var(--#{$prefix}border-radius) !default;
 $accordion-inner-border-radius: subtract(
   $accordion-border-radius,
   $accordion-border-width
@@ -1503,22 +1508,22 @@ $accordion-body-padding-x: $accordion-padding-x !default;
 $accordion-button-padding-y: $accordion-padding-y !default;
 $accordion-button-padding-x: $accordion-padding-x !default;
 $accordion-button-color: var(--#{$prefix}body-color) !default;
-$accordion-button-bg: var(--#{$prefix}accordion-bg) !default;
+$accordion-button-bg: none; //var(--#{$prefix}accordion-bg) !default;
 $accordion-transition: $btn-transition, border-radius 0.15s ease !default;
-$accordion-button-active-bg: var(--#{$prefix}primary-bg-subtle) !default;
-$accordion-button-active-color: var(--#{$prefix}primary-text-emphasis) !default;
+$accordion-button-active-bg: none; //var(--#{$prefix}primary-bg-subtle) !default;
+$accordion-button-active-color: $primary; //var(--#{$prefix}primary-text-emphasis) !default;
 
 $accordion-button-focus-border-color: $input-focus-border-color !default;
-$accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
+$accordion-button-focus-box-shadow: none; //$btn-focus-box-shadow !default;
 
-$accordion-icon-width: 1.25rem !default;
+$accordion-icon-width: 40px; // 1.25rem !default;
 $accordion-icon-color: $body-color !default;
 $accordion-icon-active-color: $primary-text-emphasis !default;
 $accordion-icon-transition: transform 0.2s ease-in-out !default;
 $accordion-icon-transform: rotate(-180deg) !default;
 
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
-$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-icon: url("../images/icons/accordian-btn.png"); //url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-active-icon: url("../images/icons/accordian-btn-active.png"); //url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 // scss-docs-end accordion-variables
 
 // Tooltips
@@ -1705,21 +1710,21 @@ $progress-bar-transition: width 0.6s ease !default;
 
 // scss-docs-start list-group-variables
 $list-group-color: var(--#{$prefix}body-color) !default;
-$list-group-bg: var(--#{$prefix}body-bg) !default;
-$list-group-border-color: var(--#{$prefix}border-color) !default;
+$list-group-bg: none; //var(--#{$prefix}body-bg) !default;
+$list-group-border-color: none; //var(--#{$prefix}border-color) !default;
 $list-group-border-width: var(--#{$prefix}border-width) !default;
-$list-group-border-radius: var(--#{$prefix}border-radius) !default;
+$list-group-border-radius: 0; //var(--#{$prefix}border-radius) !default;
 
-$list-group-item-padding-y: $spacer * 0.5 !default;
-$list-group-item-padding-x: $spacer !default;
+$list-group-item-padding-y: 0; //$spacer * 0.5 !default;
+$list-group-item-padding-x: 0; //$spacer !default;
 // fusv-disable
 $list-group-item-bg-scale: -80% !default; // Deprecated in v5.3.0
 $list-group-item-color-scale: 40% !default; // Deprecated in v5.3.0
 // fusv-enable
 
-$list-group-hover-bg: var(--#{$prefix}tertiary-bg) !default;
-$list-group-active-color: $component-active-color !default;
-$list-group-active-bg: $component-active-bg !default;
+$list-group-hover-bg: none; //var(--#{$prefix}tertiary-bg) !default;
+$list-group-active-color: $dark; //$component-active-color !default;
+$list-group-active-bg: none; //rgba(  $secondary-300,  0.5); //$component-active-bg !default;
 $list-group-active-border-color: $list-group-active-bg !default;
 
 $list-group-disabled-color: var(--#{$prefix}secondary-color) !default;

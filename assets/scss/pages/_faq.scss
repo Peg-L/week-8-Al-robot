@@ -1,0 +1,24 @@
+.border-dashed {
+  border-bottom: 1px dashed $light;
+}
+
+.accordion-button::after {
+  position: absolute;
+  right: 0px !important;
+  @include media-breakpoint-up(md) {
+    right: -64px !important;
+  }
+}
+
+.faq {
+  .list-group-item:not(.active) {
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: rgba($dark, 0.7);
+    }
+  }
+  .list-group-item.active {
+    border-bottom: 1px solid $dark;
+  }
+}

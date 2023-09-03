@@ -10,22 +10,6 @@
   text-align-last: justify;
 }
 
-.letter-spacing-16 {
-  letter-spacing: 16px;
-}
-
-.letter-spacing-20 {
-  letter-spacing: 20px;
-}
-
-.letter-spacing-32 {
-  letter-spacing: 32px;
-}
-
-.letter-spacing-48 {
-  letter-spacing: 48px;
-}
-
 .mt-n-26 {
   margin-top: -104px;
 }
@@ -86,6 +70,12 @@
   }
 }
 
+.seemore-btn:hover {
+  img {
+    animation: rotation 10s infinite linear;
+  }
+}
+
 .reviewSwiper {
   .swiper-slide {
     aspect-ratio: 1;
@@ -98,4 +88,57 @@
 
 .swiper-pagination-progressbar-fill {
   background-color: $light !important;
+}
+
+.form-floating {
+  & > label {
+    padding: 12px 16px 8px 16px;
+    font-size: 20px;
+    color: $dark;
+    font-weight: bold;
+  }
+}
+
+.contact-btn {
+  background: $primary-200;
+  color: $light;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: rgba($primary-200, 0.5);
+  }
+}
+
+.robot-item {
+  background-color: $dark;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: rgba($dark, 0.5);
+  }
+}
+
+.footer-logo {
+  a {
+    color: $dark;
+  }
+
+  &:hover {
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.footer-menu li {
+  a {
+    color: $dark;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:hover {
+    a {
+      color: $primary;
+    }
+  }
 }
