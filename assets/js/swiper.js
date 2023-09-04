@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".introSwiper", {
   loop: true,
   autoplay: {
     delay: 2500,
@@ -17,9 +17,9 @@ const swiper = new Swiper(".swiper", {
 
 const reviewSwiper = new Swiper(".reviewSwiper", {
   // loop: true,
-  slidesPerView: 4,
-  direction: "vertical",
-  spaceBetween: 16,
+  slidesPerView: 1,
+  // direction: "vertical",
+  spaceBetween: 0,
   breakpoints: {
     768: {
       slidesPerView: 2,

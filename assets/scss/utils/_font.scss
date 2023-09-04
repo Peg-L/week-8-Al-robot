@@ -18,6 +18,14 @@ $max: 48;
   }
 }
 
+@include media-breakpoint-up(sm) {
+  @for $i from 0 through $max {
+    .letter-spacing-sm-#{$i} {
+      letter-spacing: $i * 1px !important;
+    }
+  }
+}
+
 @include media-breakpoint-up(md) {
   @for $i from 0 through $max {
     .letter-spacing-md-#{$i} {

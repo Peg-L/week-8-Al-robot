@@ -123,15 +123,15 @@
           style="height: 40px"
         ></div>
         <h2
-          class="fs-6 fs-md-3 ff-sans fw-bold letter-spacing-24 letter-spacing-md-48 mb-5 mb-md-4"
+          class="fs-7 fs-sm-6 fs-md-3 ff-sans fw-bold letter-spacing-6 letter-spacing-sm-24 letter-spacing-md-48 mb-5 mb-md-4"
         >
           <span class="d-block mb-2 mb-md-4">什麼是</span>
           <span>ALPHABOX+</span>
         </h2>
-        <div class="border-bottom my-n3 my-n-md-20"></div>
+        <div class="border-bottom mx-n3 mx-n-md-20"></div>
         <div class="position-relative">
           <div class="container-md">
-            <div class="swiper pt-4 pb-8 py-md-8">
+            <div class="swiper introSwiper pt-4 pb-8 py-md-8">
               <div class="swiper-wrapper">
                 <div class="swiper-slide position-relative">
                   <div
@@ -220,7 +220,7 @@
               src="../assets/images/icons/emergency-sm.png"
               alt="重點標示"
             /><time
-              class="letter-spacing-16 fs-8 ff-sans fw-bold lh-base"
+              class="letter-spacing-16 fs-8 ff-sans fw-bold lh-base text-break"
               datetime="2023-06-30"
               >2023.06.30</time
             >
@@ -251,7 +251,7 @@
                 src="../assets/images/icons/emergency-sm.png"
                 alt="重點標示"
               /><time
-                class="letter-spacing-16 fs-8 ff-sans fw-bold lh-base"
+                class="letter-spacing-16 fs-8 ff-sans fw-bold lh-base text-break"
                 datetime="2023-06-30"
                 >2023.06.30</time
               >
@@ -275,7 +275,7 @@
                 src="../assets/images/icons/emergency-sm.png"
                 alt="重點標示"
               /><time
-                class="letter-spacing-16 fs-8 ff-sans fw-bold lh-base"
+                class="letter-spacing-16 fs-8 ff-sans fw-bold lh-base text-break"
                 datetime="2023-06-30"
                 >2023.06.30</time
               >
@@ -346,12 +346,12 @@
         </div>
 
         <div class="swiper overflow-visible reviewSwiper ff-sans fw-bold">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper flex-column flex-md-row">
             <div
-              class="swiper-slide d-flex flex-column justify-content-between bg-primary-300 p-md-10 h-100"
+              class="swiper-slide d-flex flex-column justify-content-between bg-primary-300 p-6 p-md-10 mb-6 mb-md-0"
             >
               <div>
-                <p class="mb-md-8">
+                <p class="mb-8">
                   Zona<span
                     class="mx-md-2 align-middle bg-light d-inline-block"
                     style="width: 8px; height: 8px; border-radius: 50%"
@@ -376,10 +376,10 @@
               </p>
             </div>
             <div
-              class="swiper-slide d-flex flex-column justify-content-between bg-light text-dark p-md-10"
+              class="swiper-slide d-flex flex-column justify-content-between bg-light text-dark p-6 p-md-10 mb-6 mb-md-0"
             >
               <div>
-                <p class="mb-md-8">
+                <p class="mb-8">
                   Lin<span
                     class="mx-md-2 align-middle bg-dark d-inline-block"
                     style="width: 8px; height: 8px; border-radius: 50%"
@@ -403,10 +403,10 @@
               </p>
             </div>
             <div
-              class="swiper-slide d-flex flex-column justify-content-between bg-primary-300 p-md-10"
+              class="swiper-slide d-flex flex-column justify-content-between bg-primary-300 p-6 p-md-10 mb-6 mb-md-0"
             >
               <div>
-                <p class="mb-md-8">
+                <p class="mb-8">
                   云<span
                     class="mx-md-2 align-middle bg-light d-inline-block"
                     style="width: 8px; height: 8px; border-radius: 50%"
@@ -431,10 +431,10 @@
               </p>
             </div>
             <div
-              class="swiper-slide d-flex flex-column justify-content-between bg-light text-dark p-md-10"
+              class="swiper-slide d-flex flex-column justify-content-between bg-light text-dark p-6 p-md-10"
             >
               <div>
-                <p class="mb-md-8">
+                <p class="mb-8">
                   Zichi<span
                     class="mx-md-2 align-middle bg-dark d-inline-block"
                     style="width: 8px; height: 8px; border-radius: 50%"
@@ -460,16 +460,18 @@
           </div>
         </div>
 
-        <div class="container">
+        <div class="container d-none d-md-block">
           <div class="row flex-nowrap">
             <div class="col-md-8 position-relative mt-md-12 me-md-6">
               <div class="review-swiper-pagination"></div>
             </div>
-            <span class="mt-md-9 mb-md-31">SCROLL</span>
+            <span class="mt-md-9 mb-md-31 ff-sans fw-bold">SCROLL</span>
           </div>
         </div>
 
-        <p>若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+        <p class="d-none d-md-block">
+          若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。
+        </p>
       </div>
       <img
         style="
@@ -486,11 +488,15 @@
 
     <!-- 聯絡我們 -->
     <div class="bg-primary-400 text-light">
-      <div class="container py-md-36">
+      <div class="container pt-15 pb-20 py-md-36">
         <div class="row">
           <div class="col-md-5">
-            <h2 class="fs-3 fw-bold letter-spacing-md-48 mb-md-5">聯絡我們</h2>
-            <div class="mb-md-13p5">
+            <h2
+              class="fs-4 fs-md-3 fw-bold letter-spacing-40 letter-spacing-md-48 mb-3 mb-md-5"
+            >
+              聯絡我們
+            </h2>
+            <div class="mb-9 mb-md-13p5">
               <span
                 class="me-md-2 align-middle bg-light d-inline-block"
                 style="width: 12px; height: 12px; border-radius: 50%"
@@ -500,14 +506,14 @@
                 style="width: 124px; height: 12px; border-radius: 50px"
               ></span>
             </div>
-            <div>
-              <p class="mb-md-1">讓科技成為您的最佳夥伴</p>
+            <div class="mb-6 mb-md-0">
+              <p class="mb-1">讓科技成為您的最佳夥伴</p>
               <p>立即體驗神奇功能並享限時優惠！</p>
             </div>
           </div>
           <div class="col-md-7">
             <img
-              class="mb-md-4"
+              class="mb-4"
               src="../assets/images/icons/emergency.png"
               alt="重點標示"
             />
@@ -533,7 +539,7 @@
         </div>
         <div class="row justify-content-end">
           <div class="col-md-4">
-            <button class="w-100 py-md-2 contact-btn fw-medium" type="button">
+            <button class="w-100 py-2 contact-btn fw-medium" type="button">
               <img
                 class="me-1"
                 src="../assets/images/icons/point_scan-light.svg"
@@ -550,20 +556,26 @@
       <div class="row robot-list">
         <div
           style="
-            background: url('../assets/images/diane_vertical.png') no-repeat
-              center / cover;
+            background: url('../assets/images/diane_vertical.png') no-repeat top /
+              cover;
           "
-          class="col-md-3 g-0"
+          class="col-12 col-md-6 col-lg-3 g-0"
         >
           <a
             href="###"
-            class="d-block robot-item text-light pt-md-6 px-md-10 pb-md-14"
+            class="d-block robot-item text-light py-6 px-3 pt-md-6 px-md-10 pb-md-14"
           >
-            <p class="display-1 ff-sans-saira text-center mb-md-5">1</p>
-            <p class="fs-5 text-center mb-md-20">Diane</p>
+            <p
+              class="display-2 display-md-1 ff-sans-saira text-center mb-4 mb-md-5"
+            >
+              1
+            </p>
+            <p class="fs-6 fs-md-5 text-center mb-4p5 mb-md-20">Diane</p>
             <div>
               <h3 class="fs-8 fw-bold">知識型</h3>
-              <div class="d-flex justify-content-between">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-between"
+              >
                 <p>學術領導/知識分享/智能問答</p>
                 <img
                   style="width: 155px"
@@ -576,20 +588,26 @@
         </div>
         <div
           style="
-            background: url('../assets/images/felix_vertical.png') no-repeat
-              center / cover;
+            background: url('../assets/images/felix_vertical.png') no-repeat top /
+              cover;
           "
-          class="col-md-3 g-0"
+          class="col-12 col-md-6 col-lg-3 g-0"
         >
           <a
             href="###"
-            class="d-block robot-item text-light pt-md-6 px-md-10 pb-md-14"
+            class="d-block robot-item text-light py-6 px-3 pt-md-6 px-md-10 pb-md-14"
           >
-            <p class="display-1 ff-sans-saira text-center mb-md-5">2</p>
-            <p class="fs-5 text-center mb-md-20">Felix</p>
+            <p
+              class="display-2 display-md-1 ff-sans-saira text-center mb-4 mb-md-5"
+            >
+              2
+            </p>
+            <p class="fs-6 fs-md-5 text-center mb-4p5 mb-md-20">Felix</p>
             <div>
               <h3 class="fs-8 fw-bold">娛樂型</h3>
-              <div class="d-flex justify-content-between">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-between"
+              >
                 <p>音樂播放/語音互動/遊戲陪伴</p>
                 <img
                   style="width: 155px"
@@ -603,19 +621,25 @@
         <div
           style="
             background: url('../assets/images/karina_vertical.png') no-repeat
-              center / cover;
+              top / cover;
           "
-          class="col-md-3 g-0"
+          class="col-12 col-md-6 col-lg-3 g-0"
         >
           <a
             href="###"
-            class="d-block robot-item text-light pt-md-6 px-md-10 pb-md-14"
+            class="d-block robot-item text-light py-6 px-3 pt-md-6 px-md-10 pb-md-14"
           >
-            <p class="display-1 ff-sans-saira text-center mb-md-5">3</p>
-            <p class="fs-5 text-center mb-md-20">Karina</p>
+            <p
+              class="display-2 display-md-1 ff-sans-saira text-center mb-4 mb-md-5"
+            >
+              3
+            </p>
+            <p class="fs-6 fs-md-5 text-center mb-4p5 mb-md-20">Karina</p>
             <div>
               <h3 class="fs-8 fw-bold">生活型</h3>
-              <div class="d-flex justify-content-between">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-between"
+              >
                 <p>健康提醒/日程安排/智能家居</p>
                 <img
                   style="width: 155px"
@@ -628,20 +652,26 @@
         </div>
         <div
           style="
-            background: url('../assets/images/vito_vertical.png') no-repeat
-              center / cover;
+            background: url('../assets/images/vito_vertical.png') no-repeat top /
+              cover;
           "
-          class="col-md-3 g-0"
+          class="col-12 col-md-6 col-lg-3 g-0"
         >
           <a
             href="###"
-            class="d-block robot-item text-light pt-md-6 px-md-10 pb-md-14"
+            class="d-block robot-item text-light py-6 px-3 pt-md-6 px-md-10 pb-md-14"
           >
-            <p class="display-1 ff-sans-saira text-center mb-md-5">4</p>
-            <p class="fs-5 text-center mb-md-20">Vito</p>
+            <p
+              class="display-2 display-md-1 ff-sans-saira text-center mb-4 mb-md-5"
+            >
+              4
+            </p>
+            <p class="fs-6 fs-md-5 text-center mb-4p5 mb-md-20">Vito</p>
             <div>
               <h3 class="fs-8 fw-bold">情感型</h3>
-              <div class="d-flex justify-content-between">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-between"
+              >
                 <p>情感識別/心情分析/心靈支持</p>
                 <img
                   style="width: 155px"

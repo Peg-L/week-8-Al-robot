@@ -603,6 +603,13 @@ $utilities: map-merge(
       values: $font-sizes,
       responsive: true,
     ),
+    "f-display": (
+      rfs: false,
+      property: font-size,
+      class: display,
+      values: $display-font-sizes,
+      responsive: true,
+    ),
     "font-style": (
       property: font-style,
       class: fst,
