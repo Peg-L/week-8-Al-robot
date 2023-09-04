@@ -1,9 +1,13 @@
+.navbar-menu-hover li a:hover {
+  color: rgba($light, 0.8) !important;
+}
+
 .hover-btn:hover {
   background-color: $primary-300;
   color: $light;
 
   img {
-    content: url("../assets/images/icons/point_scan-light.svg");
+    content: url("../images/icons/point_scan-light.svg");
   }
 }
 
