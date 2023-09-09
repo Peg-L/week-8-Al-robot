@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALPHABOX+ | 最懂你的陪伴者</title>
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <!-- header -->
     <%- include('./layout/header'); -%>
     <div class="bg-secondary faq">
-      <div class="container pt-15 pb-20 pt-md-16 pb-md-30">
+      <div class="container pt-36 pb-20 pt-md-31 pb-md-30">
         <h2
           class="fs-md-3 fs-4 ff-sans fw-bolder letter-spacing-48 pb-10 pb-md-16 border-dashed"
         >
@@ -24,19 +20,27 @@
         <div class="row">
           <div class="col-md-4 py-6 pt-md-10 border-dashed border-md-0">
             <div class="list-group ff-sans fw-medium">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action mb-4 active"
-                aria-current="true"
-              >
-                ALPHABOX+ 使用問題
-              </a>
-              <a href="#" class="list-group-item list-group-item-action mb-4"
-                >訂購與運送</a
-              >
-              <a href="#" class="list-group-item list-group-item-action"
-                >產品保養與維修</a
-              >
+              <h3>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action mb-4 active fs-8"
+                  aria-current="true"
+                >
+                  ALPHABOX+ 使用問題
+                </a>
+              </h3>
+              <h3>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action mb-4 fs-8"
+                  >訂購與運送</a
+                >
+              </h3>
+              <h3>
+                <a href="#" class="list-group-item list-group-item-action fs-8"
+                  >產品保養與維修</a
+                >
+              </h3>
             </div>
           </div>
           <div class="col-md-8">
@@ -50,7 +54,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse1"
                       aria-expanded="true"
-                      aria-controls="collapseOne"
+                      aria-controls="collapse1"
                     >
                       ALPHABOX+ 的使用方式是什麼？
                     </button>
@@ -70,7 +74,7 @@
                 <div class="col-md-9">
                   <h2 class="accordion-header">
                     <button
-                      class="accordion-button fw-bold"
+                      class="accordion-button collapsed fw-bold"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse2"
@@ -97,12 +101,12 @@
                 <div class="col-md-9">
                   <h2 class="accordion-header">
                     <button
-                      class="accordion-button fw-bold"
+                      class="accordion-button collapsed fw-bold"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse3"
                       aria-expanded="true"
-                      aria-controls="collapse2"
+                      aria-controls="collapse3"
                     >
                       ALPHABOX+ 支援哪些語言？
                     </button>
@@ -123,7 +127,7 @@
                 <div class="col-md-9">
                   <h2 class="accordion-header">
                     <button
-                      class="accordion-button fw-bold"
+                      class="accordion-button collapsed fw-bold"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse4"
@@ -149,7 +153,7 @@
                 <div class="col-md-9">
                   <h2 class="accordion-header">
                     <button
-                      class="accordion-button fw-bold"
+                      class="accordion-button collapsed fw-bold"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse5"
@@ -175,7 +179,7 @@
                 <div class="col-md-9">
                   <h2 class="accordion-header">
                     <button
-                      class="accordion-button fw-bold"
+                      class="accordion-button collapsed fw-bold"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse6"
@@ -204,8 +208,11 @@
         </div>
       </div>
     </div>
+
     <!-- footer -->
     <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script type="module" src="../main.js"></script>
   </body>

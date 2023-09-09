@@ -5,6 +5,7 @@
 .banner-img {
   aspect-ratio: 1;
   transition: box-shadow 0.4s ease-in-out;
+  cursor: pointer;
 
   @include media-breakpoint-up(md) {
     height: 580px;
@@ -140,11 +141,17 @@
 }
 
 .robot-item {
-  background-color: $dark;
-  transition: background-color 0.3s ease-in-out;
+  background-color: rgba($dark, 0.5);
+}
 
-  &:hover {
-    background-color: rgba($dark, 0.5);
+@include media-breakpoint-up(md) {
+  .robot-item {
+    background-color: $dark;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba($dark, 0.5);
+    }
   }
 }
 
