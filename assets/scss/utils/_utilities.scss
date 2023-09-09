@@ -230,7 +230,14 @@ $utilities: map-merge(
           50: 50%,
           75: 75%,
           100: 100%,
+          120: 120%,
           auto: auto,
+          8: 8px,
+          12: 12px,
+          16: 16px,
+          80: 80px,
+          124: 124px,
+          196: 196px,
         ),
       ),
     "max-width": (
@@ -238,6 +245,7 @@ $utilities: map-merge(
       class: mw,
       values: (
         100: 100%,
+        155: 155px,
       ),
     ),
     "viewport-width": (
@@ -264,6 +272,11 @@ $utilities: map-merge(
         75: 75%,
         100: 100%,
         auto: auto,
+        8: 8px,
+        12: 12px,
+        16: 16px,
+        40: 40px,
+        120: 120px,
       ),
     ),
     "max-height": (
